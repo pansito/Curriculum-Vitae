@@ -1,0 +1,313 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.6.2, 28 Aug 2021) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 package.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage{hyperref}
+\usepackage{url}
+\urlstyle{same}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{0000FF}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{3B444B}
+% \colorlet{name}{black}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Use (and optionally edit if necessary) this .cfg if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+\input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .cfg if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+% \input{pubs-num.cfg}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\hspace{1cm}\name{Juan josé Escorcia González}
+\tagline{Mathematician \& Data Scientist}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+\photoR{3cm}{cv foto.jpg}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\hspace{1cm}\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{juanjescorciag@gmail.com}
+  \phone{+ 57 3188584618}
+  %\mailaddress{Address, Street, 00000 County} 
+  \\
+  \vspace{0.3cm}
+  \location{Barranquilla, Atlántico}
+ % \homepage{marissamayr.tumblr.com}
+ % \twitter{@marissamayer}
+  \hspace{0.8cm}\linkedin{juanjeg}
+  \github{pansito} % I'm just making this up though.
+%   \orcid{0000-0000-0000-0000} % Obviously making this up too.
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+	%%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+
+\cvsection{About me}
+
+Multidisciplinary mathematician with passion for data science, machine
+learning, research, education, and photography; with
+Leadership and co-operation skills to work in groups and manage them, with good logical thinking for optimal
+problem solving and love for always seeking to innovate through new ideas and
+new methodologies.
+I also have knowledge about teaching methods or educational models, and curriculum design for E-learning, B-learning and regular classes. 
+\begin{paracol}{2}
+
+\cvsection{Experience}
+\cvevent{Data Scientist}{Atlantic Quantum Innovations}{January 2022 - Ongoing}{Barranquilla, Atlantico}
+\begin{itemize}
+    \item Manage multiple projects for different clients.
+    \item schedule meetings with stakeholders and clients, to establish the project to develop and also to provide solutions, and share insights and information.
+    \item collect, analyze and clean data using data wrangling process.
+    \item deploy statistical analysis and machine learning models.
+    \item Create visualizations and presentations using Power BI and Tableau.
+\end{itemize}
+\vspace{0.2cm}
+
+\cvevent{Live Feed Data Analyst}{Genius sports}{March 2021 - May 2021}{Medellin, Antioquia}
+\begin{itemize}
+\item Collect, analyze and manage real time data.
+\item Create reports about every procedure made in order to protect sports selling Markets.
+\item Recognize and protect sports selling markets against untruthful information.
+\end{itemize}
+\vspace{0.2cm}
+%%
+\cvevent{Tutor Especializado}{Universidad del Norte}{January 2017 -- November 2019}{Barranquilla, Atlántico}
+\begin{itemize}
+\item I helped to improve the grades of students in academic risk status.
+\item I gave different study methods and personalized teaching for students with learning
+troubles.
+\item I taught students how to learn by themselves and also to manage stress
+\end{itemize}
+% \cvevent{Bilingual Agent}{Sykes}{October 2020- January 2021}{Barranquilla, Atlántico}
+ \vspace{0.2cm}
+% \cvevent{Bilingual Agent}{Quantica BPO}{July 2020 - September 2020}{Barranquilla, Atlántico}
+\cvsection{Education/courses}
+\nocite{*}
+\cvevent{M.Ed. \ Communication and Information Technologies }{Universidad del Norte}{February 2021 -- Ongoing}{}
+\vspace{0.2cm}
+\cvevent{B.S.\ in Mathematics}{Universidad del Norte}{January 2016 -- November 2020}{}
+\vspace{0.2cm}
+\cvevent{
+Data Science For All}{Correlation One and MinTic Colombia}{March 2022-Ongoing}{}
+\vspace{0.2cm}
+\cvevent{
+Google Data Analysis Professional Certificate}{Google \& Coursera}{Ongoing}{}
+\cvevent{Introduction to Python \hspace{1cm} SQL for Data Science}{DataCamp \hspace{3.6cm} Coursera}{September 2021 \hspace{2.4cm} September 2021}{}
+
+\cvevent{Data Analysis with Python }{FreeCodeCamp}{September 2021}{}
+\cvevent{Data Enginering for Everyone}{DataCamp}{September 2021}{}
+%\cvevent{}{Datacamp}{February 2021}{}
+
+
+
+%\cvevent{Vice President of Search Products \& UX}{Google}{2005 --  2010}{Palo Alto, CA}
+
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+%\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
+%\wheelchart{1.5cm}{0.5cm}{%
+%  10/13em/accent!30/Sleeping \& dreaming about work,
+%  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%  5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%  20/11em/accent!40/Spending time with family,
+%  5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon %acquisition,
+%  30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
+%  5/8em/accent!20/Baking cupcakes
+%}
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the currentc column
+
+
+%\cvsection{Publications}
+
+%\nocite{*}
+
+%\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+%\divider
+
+%\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
+
+%\divider
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+\vspace{0.02cm}
+
+
+\cvsection{Honors Awards}
+\cvachievement{\faStar}{Ser Pilo Paga}{Bs Scholarship}
+\cvachievement{\faStar}{Ser Pilo Paga Profe}{Mastery Scholarship}
+\cvachievement{\faCode}{AWS \& Udacity}{Machine Learning Course Scholarship }
+
+\cvsection{Skills}
+
+\cvtag{Python} \cvtag{SQLServer} \cvtag{PostgreSQl}
+\cvtag{LaTeX} \cvtag{Power BI} \cvtag{Tableau} \cvtag{Java} \cvtag{Github} \\
+\cvtag{Java} \cvtag{Linux} \cvtag{Machine Learning} \cvtag{Neuronal Networks}\\
+\cvtag{Photoshop} \cvtag{Lightroom} \cvtag{Microsoft office} \\
+
+
+\cvsection{Languages}
+
+\cvskill{English}{4}
+% \divider 
+
+\cvskill{Spanish}{5}
+
+
+\cvskill{Portuguese}{2.5} %% supports X.5 values.
+ \cvsection{Research/Projects}
+\cvachievement{\faBookOpen}{Paper}{\href{https://www.academia.edu/71640365/SIDH_Protocol_an_Introduction}{SIDH Protocol an Introduction}} \\
+\cvachievement{\faBookOpen}{Paper}{\href{https://www.academia.edu/71640286/Elliptic_Curve_Cryptography_The_hidden_Number_Problem}{Elliptic Curve Cryptography: The hidden Number Problem}} \\
+\cvachievement{\faBookOpen}{Research}{MCA: a look for a python implementation \newline Ongoing}
+\cvachievement{\faCode}{Programs}{\href{https://github.com/pansito/Sentiment-Anlyzer}{Sentiment-Analyzer a Machine learning model \newline  Ongoing}}
+
+
+
+\divider
+\printbibliography[title={\printinfo{\faUsers}{Conferences }},type=inproceedings]
+\divider
+\printbibliography[ title={\printinfo{\faEdit}{Research Interest}},type=book]
+
+%\divider
+
+%\cvachievement{\faHeartbeat}{Persistence \& Loyalty}{I showed despite the hard moments and my willingness to stay with Yahoo after the acquisition}
+
+%\divider
+
+%\cvachievement{}{Salary Expectation}{\$2.500.000 COP or \$ 700 USD}
+
+%\divider
+
+%\cvachievement{\faFemale}{Inspiring women in tech}{Youngest CEO on Fortune's list of 50 most powerful women}
+
+
+%\cvtag{Motivator \& Leader}
+%
+%\divider\smallskip
+
+%\cvtag{UX}
+%\cvtag{Mobile Devices \& Applications}
+%\cvtag{Product Management \& Marketing}
+
+
+
+
+
+
+% \cvref{name}{email}{mailing address}
+%\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
+%{Address Line 1\\Address line 2}
+
+%\divider
+
+%\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
+%{Address Line 1\\Address line 2}
+
+\end{paracol}
+
+\end{document}
